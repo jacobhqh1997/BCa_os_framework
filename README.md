@@ -123,7 +123,7 @@ DATA_ROOT is the base directory of all datasets (e.g. the directory to your SSD 
 
 
 ## Acknowledgements
-- Prognosis training and test code base structure was inspired by [[PathFinder](https://github.com/Biooptics2021/PathFinder)](https://github.com/mahmoodlab/PathomicFusion).
+- Prognosis training and test code base structure was inspired by [[PathFinder](https://github.com/Biooptics2021/PathFinder)].
 
 - Tumor necrosis distribution score (TND) was inspired by [TILAb-Score](https://github.com/TissueImageAnalytics/TILAb-Score).
 
