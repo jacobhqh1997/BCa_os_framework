@@ -65,22 +65,22 @@ class ImageFeatureDataset(Dataset):
 
         return image_uni, (x, y), img_path
 
-# 初始化变量和目录
+
 image_dir = 'path/to/patch_img/'
 output_dir_uni = 'path/to/save_img/'
 os.makedirs(output_dir_uni, exist_ok=True)
 
-# 加载数据集
+
 dataset = ImageFeatureDataset(image_dir, transform_uni)
 dataloader = DataLoader(dataset, batch_size=700, shuffle=False, num_workers=0)
 
 
-# 设置设备
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model_uni.to(device)
 
 
-# 存储特征和坐标
+
 features_dict_uni = defaultdict(lambda: {'features': [], 'coords': []})
 
 # 
@@ -97,7 +97,7 @@ with torch.no_grad():
 
 
 
-# 保存特征和坐标到文件
+
 for subdir, data in features_dict_uni.items():
     filename = f"{subdir}_features.pt"
     result_path_uni = os.path.join(output_dir_uni, filename)
