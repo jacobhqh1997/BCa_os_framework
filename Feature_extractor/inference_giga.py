@@ -54,22 +54,21 @@ class ImageFeatureDataset(Dataset):
 
         return  image_giga, (x, y), img_path
 
-# 初始化变量和目录
 image_dir = 'path/to/patch_img/'
 output_dir_giga = 'path/to/save_img/'
 os.makedirs(output_dir_giga, exist_ok=True)
 
 
-# 加载数据集
+
 dataset = ImageFeatureDataset(image_dir, transform)
 dataloader = DataLoader(dataset, batch_size=1000, shuffle=False, num_workers=0)
 
-# 设置设备
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 tile_encoder.to(device)
-# 存储特征和坐标
+
 features_dict_giga = defaultdict(lambda: {'features': [], 'coords': []})
-# 
+
 with torch.no_grad():
     for patches_giga, (y_coords, x_coords), paths in dataloader:
 
