@@ -1,6 +1,6 @@
 # download modified timm library: https://drive.google.com/u/0/uc?id=1JV7aj9rKqGedXY1TdDfi3dP07022hcgZ&export=download
 # install in your conda/docker enviroment using: pip install timm-0.5.4.tar
-######################################################################################这个特征提取是成功了的。
+
 import timm
 import torch.nn as nn
 from timm.models.layers.helpers import to_2tuple
