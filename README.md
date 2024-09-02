@@ -8,7 +8,7 @@ Precise stratification of survival risk for bladder cancer (BCa) is critical for
 ## Directory Structure
 
 
-* **Training Scripts**: *Training Scripts for MacroVisionNet and UniVisionNet.*
+* **Training Scripts**: *Training Scripts for BlaPaSeg, MacroVisionNet and UniVisionNet.*
 * **Data_process**: *Data preprocessing file.*
 * **Feature_extractor**: *macro, micro feature extraction.*
 * **Network**: *MacroVisionNet and UniVisionNet  structure.*
@@ -89,6 +89,7 @@ Precise stratification of survival risk for bladder cancer (BCa) is critical for
 
 ```shell
 $ cd ./Training Scripts
+$ python BlaPaSeg_cash.py   # BlaPaSeg training scripts 
 $ python train_macro_cash.py   # MacroVisionNet training scripts 
 $ python train_uni_cash.py   # UniVisionNet training scripts 
 ```
