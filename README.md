@@ -12,7 +12,6 @@ Precise stratification of survival risk for bladder cancer (BCa) is critical for
 * **Data_process**: *Data preprocessing file.*
 * **Feature_extractor**: *macro, micro feature extraction.*
 * **Network**: *MacroVisionNet and UniVisionNet  structure.*
-* **Biomarker_quantification**: *Detailed code for biomarker calculation and definition .*
 * **Visualization**: *Detailed code for  attribution heatmap and  attention score heatmap.*
 
 
@@ -95,17 +94,7 @@ $ python BlaPaSeg_cash.py   # BlaPaSeg training scripts
 $ python train_macro_cash.py   # MacroVisionNet training scripts 
 $ python train_uni_cash.py   # UniVisionNet training scripts 
 ```
-### Biomarker_quantification
 
-```shell
-$ cd ./Biomarker_quantification
-$ python Coloc_score.py   # Coloc_score calculation scripts 
-$ python IFS_score.py   #  IFS_score calculation scripts 
-$ python IMTS_score.py   # IMTS_score calculation scripts 
-$ python TFS_score.py   # TFS_score calculation scripts 
-$ python TIL_score.py   # TIL_score calculation scripts 
-$ python TIM_Score.py   # TIM_Score calculation scripts 
-```
 ### Visualization
 
 ```shell
