@@ -1,4 +1,4 @@
-# ***An integrated deep learning system for prognostication prediction in bladder cancer***
+# ***Integrated multicenter deep learning system for prognostic prediction in bladder cancer***
 
 © This code is made available for non-commercial academic purposes. 
 
