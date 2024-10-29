@@ -12,7 +12,6 @@ Precise stratification of survival risk for bladder cancer (BCa) is critical for
 * **Data_process**: *Data preprocessing file.*
 * **Feature_extractor**: *macro, micro feature extraction.*
 * **Network**: *MacroVisionNet and UniVisionNet  structure.*
-* **Visualization**: *Detailed code for  attribution heatmap and  attention score heatmap.*
 
 
 ## Pre-requisites and Environment
@@ -95,13 +94,7 @@ $ python train_macro_cash.py   # MacroVisionNet training scripts
 $ python train_uni_cash.py   # UniVisionNet training scripts 
 ```
 
-### Visualization
 
-```shell
-$ cd ./visualization
-$ Attribution_heatmap.ipynb   # Jupyter Notebook for the  MacroVisionNet attribution heatmap
-$ Transmil_attentionmap.ipynb   # Jupyter Notebook for the  UniVisionNet attribution heatmap
-```
 
 
 ### Data Distribution
